@@ -250,7 +250,7 @@ h1 em {
 }
 .services-image-card img {
   width: 100%;
-  height: 100%;
+  min-height: 420px;
   object-fit: cover;
 }
 .services-copy {
@@ -259,7 +259,8 @@ h1 em {
 .services-copy h2,
 .why h2,
 .gallery h2,
-.contact h2 {
+.contact h2,
+.photo-band-card h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.08;
@@ -298,6 +299,54 @@ h1 em {
   color: var(--gold);
   font-weight: 900;
   margin-right: 0.65rem;
+}
+
+.photo-band {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  padding: clamp(2rem, 5vw, 5rem) clamp(20px, 5vw, 80px);
+  background: #05070a;
+}
+.photo-band > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.42;
+}
+.photo-band::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.86), rgba(0,0,0,0.35));
+}
+.photo-band-card {
+  position: relative;
+  z-index: 2;
+  max-width: 670px;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: rgba(7,10,15,0.78);
+  border-left: 4px solid var(--gold);
+  box-shadow: var(--shadow);
+}
+.photo-band-card p {
+  margin: 0 0 0.6rem;
+  color: var(--gold-soft);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+.photo-band-card a {
+  display: inline-block;
+  margin-top: 1.3rem;
+  color: var(--gold-soft);
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .why {
@@ -359,12 +408,35 @@ h1 em {
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
+.real-gallery {
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+.real-gallery .wide img {
+  aspect-ratio: 16 / 9;
+}
+.logo-tile {
+  display: grid;
+  place-items: center;
+  background: #05070a !important;
+  padding: 1.5rem;
+}
+.logo-tile img {
+  object-fit: contain;
+  aspect-ratio: 16 / 10;
+}
 
 .contact {
   padding: clamp(3rem, 5vw, 5rem) clamp(20px, 4vw, 64px);
   background: #f5f5f3;
   color: #111;
   text-align: center;
+}
+.contact-logo {
+  width: min(420px, 86vw);
+  margin: 0 auto 1.5rem;
+  background: #05070a;
+  padding: 1rem;
+  border-radius: 8px;
 }
 .contact p {
   max-width: 680px;
@@ -398,6 +470,8 @@ h1 em {
   .trust-bar article { border-bottom: 1px solid var(--line); }
   .why-grid { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
   .why-grid article { border-right: none; }
+  .real-gallery { grid-template-columns: 1fr 1fr; }
+  .real-gallery .wide { grid-column: 1 / -1; }
 }
 
 @media (max-width: 760px) {
@@ -448,7 +522,10 @@ h1 em {
     border-right: none;
   }
   .services-overview { grid-template-columns: 1fr; }
+  .services-image-card img { min-height: 320px; }
   .why-grid { grid-template-columns: 1fr; }
   .why-grid article { border-bottom: 1px solid var(--line); padding: 1.4rem 0; }
-  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid,
+  .real-gallery { grid-template-columns: 1fr; }
+  .real-gallery .wide { grid-column: auto; }
 }
