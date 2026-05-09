@@ -9,17 +9,18 @@
   </head>
   <body>
     <header class="site-header" id="top">
-      <nav class="nav container" aria-label="Primary navigation">
+      <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="SouthStar Lighting Solutions home">
-          <img class="brand-logo" src="assets/images/Southstar%20Lighting%20Solutions%20logo.png" alt="SouthStar Lighting Solutions LLC" />
+          <img src="assets/images/Southstar%20Lighting%20Solutions%20logo.png" alt="SouthStar Lighting Solutions LLC" />
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
           <span class="sr-only">Toggle navigation</span>
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-menu" id="nav-menu">
+          <li><a class="active" href="#top">Home</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -28,104 +29,79 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-visual" aria-hidden="true">
-          <img src="assets/images/mockup-outline-1.png" alt="" />
+        <img class="hero-bg" src="assets/images/mockup-outline-1.png" alt="SouthStar technician working on commercial lighting from a lift" />
+        <div class="hero-shade"></div>
+        <div class="hero-inner">
+          <p class="hero-label">Professional <span></span> Reliable <span></span> Fast Response</p>
+          <h1 id="hero-title"><strong>Commercial</strong><em>Lighting</em> & Electrical Services</h1>
+          <p class="hero-copy">SouthStar Lighting Solutions LLC provides expert commercial lighting and electrical services for retail, hospitality, office, and industrial properties. We deliver quality, safety, and efficiency on every project.</p>
+          <a class="btn btn-outline" href="mailto:contact@southstarlightingsolutions.llc">Request Service <span>→</span></a>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-          <p class="eyebrow">SouthStar Lighting Solutions LLC</p>
-          <h1 id="hero-title">Commercial Lighting & Electrical Services</h1>
-          <p class="hero-copy">Professional • Reliable • Fast Response</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:contact@southstarlightingsolutions.llc">Request Service</a>
-            <a class="btn btn-secondary" href="#services">View Services</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section services-section" id="services" aria-labelledby="services-title">
-        <div class="container section-grid">
-          <div class="section-copy">
-            <p class="section-kicker">What we do</p>
-            <h2 id="services-title">Our Services</h2>
-            <p class="section-intro">Lighting and electrical solutions for retail stores, offices, shopping centers, and commercial facilities.</p>
-            <figure class="featured-photo">
-              <img src="assets/images/services-in-action.png" alt="SouthStar technician performing commercial lighting work" loading="lazy" />
-            </figure>
-          </div>
-          <div class="services-grid">
-            <article class="service-card"><span>01</span><h3>Commercial Lighting Repairs</h3><p>Reliable repair support for commercial lighting outages, fixtures, lamps, sockets, drivers, and controls.</p></article>
-            <article class="service-card"><span>02</span><h3>LED Retrofits</h3><p>Energy-efficient LED upgrades for existing commercial lighting systems and retail spaces.</p></article>
-            <article class="service-card"><span>03</span><h3>Track Lighting Installation</h3><p>Installation, replacement, aiming, and troubleshooting for retail track lighting systems.</p></article>
-            <article class="service-card"><span>04</span><h3>Electrical Troubleshooting</h3><p>Professional diagnostics for lighting circuits, controls, power issues, and system failures.</p></article>
-            <article class="service-card"><span>05</span><h3>Emergency Lighting Repairs</h3><p>Support for emergency and priority lighting issues that affect safety and business operations.</p></article>
-            <article class="service-card"><span>06</span><h3>Retail & Office Lighting</h3><p>Lighting maintenance and improvements for sales floors, offices, back-of-house, and display areas.</p></article>
-            <article class="service-card"><span>07</span><h3>Lift & High Ceiling Work</h3><p>Service for high ceilings and hard-to-reach lighting using safe lift planning and proper coordination.</p></article>
-            <article class="service-card"><span>08</span><h3>Lighting Maintenance Services</h3><p>Preventive maintenance and service documentation for ongoing commercial lighting needs.</p></article>
-          </div>
+        <div class="trust-bar" aria-label="SouthStar service highlights">
+          <article><span class="icon">▥</span><div><strong>Commercial Expertise</strong><p>Specialized in commercial and industrial properties.</p></div></article>
+          <article><span class="icon">♢</span><div><strong>Safety First</strong><p>Committed to the highest safety standards.</p></div></article>
+          <article><span class="icon">ϟ</span><div><strong>Fast Response</strong><p>Quick turnaround for repairs and emergencies.</p></div></article>
+          <article><span class="icon">◎</span><div><strong>Quality Guaranteed</strong><p>Delivering long-lasting solutions you can trust.</p></div></article>
         </div>
       </section>
 
-      <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="container split">
-          <figure class="image-card">
-            <img src="assets/images/mockup-outline-2.png" alt="SouthStar commercial lighting and electrical services website visual" loading="lazy" />
-          </figure>
-          <div class="content-panel">
-            <p class="section-kicker">About us</p>
-            <h2 id="about-title">Professional service built around safety, reliability, and clean execution.</h2>
-            <p>SouthStar Lighting Solutions LLC provides professional commercial lighting and electrical services for retail stores, office spaces, shopping centers, and commercial facilities.</p>
-            <p>We focus on reliable service, safe work practices, fast response, and high-quality lighting solutions designed to keep businesses operating efficiently.</p>
-          </div>
+      <section class="services-overview" id="services" aria-labelledby="services-title">
+        <div class="services-image-card">
+          <img src="assets/images/services-in-action.png" alt="SouthStar technician servicing commercial lighting from a lift" loading="lazy" />
+        </div>
+        <div class="services-copy" id="about">
+          <h2 id="services-title">Commercial Lighting & Electrical Solutions</h2>
+          <div class="gold-line"></div>
+          <p>At SouthStar Lighting Solutions LLC, we specialize in high-quality commercial lighting services with fast response times, professional workmanship, and reliable solutions.</p>
+          <p>Our mission is to provide safe, efficient, and modern lighting systems for retail stores, commercial properties, offices, and specialty environments.</p>
+          <ul class="check-list">
+            <li>LED Retrofits</li>
+            <li>Commercial Lighting Repairs</li>
+            <li>Track Lighting Installation</li>
+            <li>Electrical Troubleshooting</li>
+            <li>Emergency Lighting Services</li>
+            <li>Retail & Office Lighting</li>
+            <li>Preventive Maintenance</li>
+          </ul>
+          <a class="btn btn-dark" href="mailto:contact@southstarlightingsolutions.llc">Schedule Service</a>
         </div>
       </section>
 
-      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
-        <div class="container">
-          <p class="section-kicker">Project visuals</p>
-          <h2 id="gallery-title">Commercial lighting visuals prepared for client preview.</h2>
-          <div class="gallery-grid">
-            <figure><img src="assets/images/mockup-outline-3.png" alt="SouthStar hero website mockup with commercial lighting technician" loading="lazy" /></figure>
-            <figure><img src="assets/images/mockup-outline-4.png" alt="SouthStar full website concept mockup" loading="lazy" /></figure>
-            <figure><img src="assets/images/mockup-outline-1.png" alt="SouthStar commercial lighting homepage mockup" loading="lazy" /></figure>
-          </div>
+      <section class="why" aria-labelledby="why-title">
+        <h2 id="why-title">Why Choose <span>SouthStar?</span></h2>
+        <div class="gold-line center"></div>
+        <div class="why-grid">
+          <article><span>◴</span><h3>Fast Response Times</h3><p>We respond quickly to keep your business running.</p></article>
+          <article><span>▥</span><h3>Commercial Experts</h3><p>Specialized in commercial and retail lighting solutions.</p></article>
+          <article><span>♙</span><h3>Professional Technicians</h3><p>Skilled, trained, and committed to quality workmanship.</p></article>
+          <article><span>◇</span><h3>Reliable Service</h3><p>Dependable solutions you can count on, every time.</p></article>
+          <article><span>⚠</span><h3>Emergency Support</h3><p>Support when urgent lighting issues affect operations.</p></article>
+          <article><span>⚙</span><h3>Preventive Maintenance</h3><p>Routine maintenance to prevent issues and save costs.</p></article>
+          <article><span>◇</span><h3>Safety Focused</h3><p>Your safety and compliance are our priority.</p></article>
         </div>
       </section>
 
-      <section class="section why-section" id="why-us" aria-labelledby="why-title">
-        <div class="container">
-          <p class="section-kicker">Why choose us</p>
-          <h2 id="why-title">Reliable support for commercial environments.</h2>
-          <div class="value-grid">
-            <article><h3>Reliable Response</h3><p>Clear communication and focused service for urgent lighting and electrical needs.</p></article>
-            <article><h3>Commercial Experience</h3><p>Experience with retail, office, and commercial lighting maintenance environments.</p></article>
-            <article><h3>Safety First</h3><p>Proper planning for ladders, lifts, access restrictions, and work-hour requirements.</p></article>
-            <article><h3>Clean Professional Service</h3><p>Organized service notes, job documentation, and respectful work around business operations.</p></article>
-          </div>
+      <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Gallery</h2>
+        <div class="gold-line center"></div>
+        <div class="gallery-grid">
+          <figure><img src="assets/images/mockup-outline-2.png" alt="SouthStar hero layout with technician on lift" loading="lazy" /></figure>
+          <figure><img src="assets/images/mockup-outline-3.png" alt="SouthStar commercial lighting homepage concept" loading="lazy" /></figure>
+          <figure><img src="assets/images/mockup-outline-4.png" alt="SouthStar complete website design concept" loading="lazy" /></figure>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="container contact-card">
-          <p class="section-kicker">Request service</p>
-          <h2 id="contact-title">Ready to schedule lighting or electrical service?</h2>
-          <p>Email SouthStar Lighting Solutions LLC and include your location, service needed, photos if available, and preferred schedule.</p>
-          <a class="btn btn-primary" href="mailto:contact@southstarlightingsolutions.llc">Email Us</a>
-        </div>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Schedule Service</h2>
+        <p>Need commercial lighting or electrical service? Send us your location, photos, and service details.</p>
+        <a class="btn btn-blue" href="mailto:contact@southstarlightingsolutions.llc">Email SouthStar Lighting Solutions</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <strong>SouthStar Lighting Solutions LLC</strong>
-          <p>Commercial Lighting & Electrical Services</p>
-        </div>
-        <div>
-          <a href="mailto:contact@southstarlightingsolutions.llc">contact@southstarlightingsolutions.llc</a>
-          <p>southstarlightingsolutions.llc</p>
-        </div>
-      </div>
+      <strong>SouthStar Lighting Solutions LLC</strong>
+      <p>Commercial Lighting & Electrical Services</p>
+      <a href="mailto:contact@southstarlightingsolutions.llc">contact@southstarlightingsolutions.llc</a>
       <p class="copyright">© 2026 SouthStar Lighting Solutions LLC. All rights reserved.</p>
     </footer>
 
