@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="site-header" id="top">
-      <nav class="nav" aria-label="Primary navigation">
+      <nav class="nav container" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="SouthStar Lighting Solutions home">
           <span class="brand-mark" aria-hidden="true">✦</span>
           <span class="brand-text">SouthStar Lighting Solutions</span>
@@ -21,7 +21,7 @@
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -29,6 +29,10 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Replace this file with your generated hero/banner image after uploading it to assets/hero-southstar.png -->
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1800&auto=format&fit=crop" alt="" />
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content container">
           <p class="eyebrow">SouthStar Lighting Solutions LLC</p>
@@ -43,10 +47,14 @@
 
       <section class="section services-section" id="services" aria-labelledby="services-title">
         <div class="container section-grid">
-          <div>
+          <div class="section-copy">
             <p class="section-kicker">What we do</p>
             <h2 id="services-title">Our Services</h2>
             <p class="section-intro">Lighting and electrical solutions for retail stores, offices, shopping centers, and commercial facilities.</p>
+            <figure class="featured-photo">
+              <!-- Replace with your service image: assets/services-southstar.png -->
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop" alt="Technician working on commercial lighting" loading="lazy" />
+            </figure>
           </div>
           <div class="services-grid">
             <article class="service-card"><span>01</span><h3>Commercial Lighting Repairs</h3><p>Reliable repair support for commercial lighting outages, fixtures, lamps, sockets, drivers, and controls.</p></article>
@@ -63,12 +71,27 @@
 
       <section class="section about-section" id="about" aria-labelledby="about-title">
         <div class="container split">
-          <div class="image-panel" role="img" aria-label="Technician servicing commercial lighting"></div>
+          <figure class="image-card">
+            <!-- Replace with a real project/photo: assets/about-commercial-lighting.jpg -->
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1200&auto=format&fit=crop" alt="Modern commercial interior lighting" loading="lazy" />
+          </figure>
           <div class="content-panel">
             <p class="section-kicker">About us</p>
             <h2 id="about-title">Professional service built around safety, reliability, and clean execution.</h2>
             <p>SouthStar Lighting Solutions LLC provides professional commercial lighting and electrical services for retail stores, office spaces, shopping centers, and commercial facilities.</p>
             <p>We focus on reliable service, safe work practices, fast response, and high-quality lighting solutions designed to keep businesses operating efficiently.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <p class="section-kicker">Project visuals</p>
+          <h2 id="gallery-title">Commercial lighting work, visible and ready for replacement with your real assets.</h2>
+          <div class="gallery-grid">
+            <figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop" alt="Interior lighting project" loading="lazy" /></figure>
+            <figure><img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=900&auto=format&fit=crop" alt="Office lighting project" loading="lazy" /></figure>
+            <figure><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=900&auto=format&fit=crop" alt="Modern lighting installation" loading="lazy" /></figure>
           </div>
         </div>
       </section>
