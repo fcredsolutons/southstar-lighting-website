@@ -14,26 +14,26 @@ if (toggleButton && navMenu) {
 const siteVisualOverrides = document.createElement('style');
 siteVisualOverrides.textContent = `
   .hero-bg {
-    filter: brightness(1.22) contrast(1.06) saturate(1.06) !important;
+    filter: brightness(1.28) contrast(1.06) saturate(1.06) !important;
   }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.14) 44%, rgba(0,0,0,0.02) 100%),
-      linear-gradient(180deg, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.05) 52%, rgba(0,0,0,0.42) 100%) !important;
+      linear-gradient(90deg, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0.10) 44%, rgba(0,0,0,0.01) 100%),
+      linear-gradient(180deg, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.03) 52%, rgba(0,0,0,0.34) 100%) !important;
   }
 
   .services-bg {
-    filter: brightness(1.34) contrast(1.07) saturate(1.06) !important;
+    filter: brightness(1.42) contrast(1.07) saturate(1.07) !important;
   }
 
   .services-action-shade {
     background:
-      linear-gradient(90deg, rgba(0,0,0,0.84) 0%, rgba(0,0,0,0.70) 38%, rgba(0,0,0,0.36) 58%, rgba(0,0,0,0.01) 100%) !important;
+      linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.62) 38%, rgba(0,0,0,0.26) 58%, rgba(0,0,0,0.01) 100%) !important;
   }
 
   .gallery-grid img {
-    filter: brightness(1.26) contrast(1.05) saturate(1.05) !important;
+    filter: brightness(1.34) contrast(1.05) saturate(1.06) !important;
   }
 
   .logo-tile img,
@@ -196,38 +196,91 @@ siteVisualOverrides.textContent = `
   }
 
   @media (max-width: 760px) {
+    .site-header {
+      padding: 18px 18px !important;
+    }
+
+    .brand img {
+      width: 172px !important;
+    }
+
     .hero-bg {
-      filter: brightness(1.34) contrast(1.08) saturate(1.06) !important;
+      filter: brightness(1.46) contrast(1.08) saturate(1.08) !important;
     }
 
     .hero-shade {
       background:
-        linear-gradient(90deg, rgba(0,0,0,0.46), rgba(0,0,0,0.06)),
-        linear-gradient(180deg, rgba(0,0,0,0.01), rgba(0,0,0,0.30)) !important;
+        linear-gradient(90deg, rgba(0,0,0,0.38), rgba(0,0,0,0.04)),
+        linear-gradient(180deg, rgba(0,0,0,0.01), rgba(0,0,0,0.22)) !important;
+    }
+
+    .hero-inner {
+      padding-top: 138px !important;
+      min-height: 640px !important;
+    }
+
+    .hero-label {
+      font-size: 0.78rem !important;
+      line-height: 1.35 !important;
+    }
+
+    h1 {
+      font-size: clamp(2.85rem, 12.8vw, 4.25rem) !important;
+      line-height: 0.96 !important;
+    }
+
+    .hero-copy,
+    .hero-bilingual {
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+      max-width: 92% !important;
+    }
+
+    .trust-bar strong {
+      font-size: 0.76rem !important;
+      line-height: 1.25 !important;
+    }
+
+    .trust-bar p {
+      font-size: 0.8rem !important;
+      line-height: 1.45 !important;
     }
 
     .services-bg {
-      opacity: 0.98 !important;
-      filter: brightness(1.45) contrast(1.08) saturate(1.07) !important;
+      opacity: 1 !important;
+      filter: brightness(1.58) contrast(1.08) saturate(1.08) !important;
     }
 
     .services-action-shade {
       background:
-        linear-gradient(90deg, rgba(0,0,0,0.58), rgba(0,0,0,0.10)),
-        linear-gradient(180deg, rgba(0,0,0,0.01), rgba(0,0,0,0.34)) !important;
+        linear-gradient(90deg, rgba(0,0,0,0.50), rgba(0,0,0,0.07)),
+        linear-gradient(180deg, rgba(0,0,0,0.01), rgba(0,0,0,0.26)) !important;
+    }
+
+    .services-list li {
+      font-size: 1.08rem !important;
+      line-height: 1.35 !important;
+      min-height: 56px !important;
     }
 
     .gallery-grid img {
-      filter: brightness(1.34) contrast(1.05) saturate(1.06) !important;
+      filter: brightness(1.46) contrast(1.06) saturate(1.08) !important;
+    }
+
+    .about-premium {
+      padding-top: 3.2rem !important;
+      padding-bottom: 3.3rem !important;
     }
 
     .about-shell h2 {
-      font-size: clamp(2.05rem, 10vw, 3rem) !important;
+      font-size: clamp(2.15rem, 10vw, 3.1rem) !important;
+      line-height: 1.03 !important;
     }
 
     .about-lead {
       padding-left: 1rem !important;
-      font-size: 1rem !important;
+      font-size: 1.05rem !important;
+      line-height: 1.75 !important;
     }
 
     .about-stats,
@@ -236,8 +289,48 @@ siteVisualOverrides.textContent = `
       grid-template-columns: 1fr !important;
     }
 
+    .about-stats {
+      gap: 0.8rem !important;
+    }
+
+    .about-stats article {
+      padding: 1.15rem 1.2rem !important;
+    }
+
+    .about-stats span,
+    .about-card p,
+    .about-checks li {
+      font-size: 1rem !important;
+      line-height: 1.65 !important;
+    }
+
+    .about-card {
+      padding: 1.28rem !important;
+      border-radius: 16px !important;
+    }
+
+    .about-card h3,
+    .about-services-box h3 {
+      font-size: 1.32rem !important;
+      line-height: 1.2 !important;
+    }
+
     .about-card.featured {
       grid-row: auto !important;
+    }
+
+    .about-quote {
+      font-size: 1.18rem !important;
+      line-height: 1.38 !important;
+    }
+
+    .why-grid h3 {
+      font-size: 0.95rem !important;
+    }
+
+    .why-grid p {
+      font-size: 0.86rem !important;
+      line-height: 1.5 !important;
     }
   }
 `;
