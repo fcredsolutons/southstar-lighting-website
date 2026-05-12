@@ -169,7 +169,7 @@ h1 em { color: var(--gold); }
 .trust-bar p { margin: 0.28rem 0 0; color: var(--muted); font-size: 0.84rem; }
 
 .services-action {
-  min-height: clamp(600px, 64vw, 760px);
+  min-height: clamp(620px, 66vw, 820px);
   position: relative;
   overflow: hidden;
   display: grid;
@@ -178,12 +178,11 @@ h1 em { color: var(--gold); }
 }
 .services-bg {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: min(76vw, 1180px);
+  inset: 0;
+  width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: right center;
+  object-fit: cover;
+  object-position: 72% center;
   z-index: 0;
 }
 .services-action-shade {
@@ -191,7 +190,8 @@ h1 em { color: var(--gold); }
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.94) 31%, rgba(0,0,0,0.54) 58%, rgba(0,0,0,0.10) 100%);
+    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.96) 33%, rgba(0,0,0,0.58) 58%, rgba(0,0,0,0.16) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.36));
 }
 .services-action-content {
   position: relative;
@@ -247,7 +247,7 @@ h1 em { color: var(--gold); }
 }
 
 .solutions {
-  padding: clamp(2.8rem, 5vw, 5rem) clamp(24px, 6vw, 96px);
+  padding: clamp(3rem, 5vw, 5.4rem) clamp(24px, 6vw, 96px);
   background: #f5f5f3;
   color: #111;
   text-align: left;
@@ -306,7 +306,6 @@ h1 em { color: var(--gold); }
   .trust-bar { grid-template-columns: repeat(2, 1fr); }
   .trust-bar article { border-bottom: 1px solid var(--line); }
   .services-action-content { width: min(58vw, 620px); }
-  .services-bg { width: 82vw; }
   .why-grid { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
   .why-grid article { border-right: none; }
   .real-gallery { grid-template-columns: 1fr 1fr; }
@@ -345,7 +344,7 @@ h1 em { color: var(--gold); }
   .trust-bar strong { font-size: 0.68rem; }
   .trust-bar p { font-size: 0.72rem; }
   .services-action { min-height: 640px; align-items: center; }
-  .services-bg { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; opacity: 0.75; }
+  .services-bg { object-position: 70% center; opacity: 0.76; }
   .services-action-shade { background: linear-gradient(90deg, rgba(0,0,0,0.94), rgba(0,0,0,0.38)), linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.78)); }
   .services-action-content { width: 100%; padding: 3.1rem 24px; }
   .services-list-panel h2 { font-size: clamp(2.45rem, 12.5vw, 3.7rem); }
